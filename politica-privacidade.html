@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — PMMG365</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="documento">
+  <nav aria-label="Navegação principal">
+    <a class="marca" href="./">PMMG365</a>
+    <div>
+      <a href="suporte.html">Suporte</a>
+      <a href="politica-privacidade.html" aria-current="page">Privacidade</a>
+    </div>
+  </nav>
+  <header>
+    <h1>Política de Privacidade</h1>
+    <p class="app">PMMG365</p>
+  </header>
+
+  <div class="resumo">
+    <p><strong>Resumo:</strong> o app não tem anúncios nem rastreamento e não exige cadastro. O conteúdo funciona offline. Estudos, anotações e diagnósticos ficam no aparelho; um relatório só sai por ação explícita do usuário. Com a conta opcional (Apple, Google ou e-mail com código), estudos e anotações também ficam guardados no Supabase, para chegar aos seus outros aparelhos, e a conta pode ser excluída dentro do app. A assinatura PMMG365 Pro é cobrada pela Apple, e o serviço RevenueCat confirma o acesso com um identificador sem nome nem e-mail: aleatório sem conta, o da conta com ela.</p>
+  </div>
+
+  <h2>Dados armazenados no aparelho</h2>
+  <p>O app guarda preferências, posição de leitura por diploma, favoritos, grifos, sublinhados, notas, dispositivos
+  riscados, perfil de estudos, disponibilidade, ajustes da agenda, conclusões, revisão de questões
+  e sessão em andamento. Também pode registrar diagnósticos técnicos e pedidos de normas em
+  arquivos locais. Sem conta, nada disso sai do aparelho. Com a conta, só a parte descrita
+  em <a href="#conta">Conta e sincronização</a> é sincronizada.</p>
+  <p>Um diagnóstico pode conter identificador aleatório da instalação, versão e build do
+  app, sistema, modelo técnico do aparelho, idioma, aparência, diploma
+  relacionado, descrição do problema, erro técnico e contato que o usuário tenha digitado.</p>
+
+  <h2>Envio e uso de diagnósticos</h2>
+  <p>O Release não possui endpoint automático de diagnóstico configurado. Registrar um
+  problema ou pedido cria um protocolo local. O usuário decide se quer usar
+  <strong>Exportar relatório</strong> e para qual aplicativo ou destinatário quer
+  compartilhá-lo.</p>
+  <p>Se o usuário enviar um relatório ao desenvolvedor ou abrir um chamado, as informações
+  recebidas serão usadas para suporte, correção de bugs e conteúdo e análise agregada da
+  qualidade do app. Elas não são usadas para publicidade, perfil comercial ou rastreamento
+  entre apps e sites.</p>
+
+  <h2>Calendário do aparelho</h2>
+  <p>Se o usuário permitir, o app lê os compromissos do calendário do aparelho para
+  mostrá-los junto dos blocos de estudo em Hoje. O acesso é somente leitura: nada é criado,
+  alterado ou enviado.</p>
+
+  <h2>Atualizações do acervo</h2>
+  <p>Ao abrir, o app pode consultar um arquivo público no Supabase para saber se há legislação
+  atualizada e, se houver, baixa o pacote novo. Essa consulta não leva conta, anotações nem
+  estudos.</p>
+
+  <h2>Assinatura e compras</h2>
+  <p>A assinatura PMMG365 Pro é comprada pela App Store. Cobrança, forma de pagamento e
+  reembolso ficam com a Apple; o app não recebe dados de pagamento nem o seu Apple ID.</p>
+  <p>Para saber se há assinatura ativa e quais planos mostrar, o app usa o SDK
+  RevenueCat Purchases iOS. Ao abrir o app e ao comprar ou restaurar, o SDK envia ao RevenueCat um
+  identificador, o recibo da App Store (produtos, datas e estado da assinatura), a versão do
+  app e do sistema e o país da loja. Sem conta, o identificador é aleatório, criado no
+  aparelho. Com a conta conectada, é o identificador da conta (um código, sem nome nem
+  e-mail), e a assinatura passa a acompanhar a conta nos seus outros aparelhos; uma
+  assinatura comprada antes de entrar vem junto. Ao sair da conta ou excluí-la, o app volta
+  a usar um identificador aleatório. Esses dados servem só para liberar, renovar e restaurar
+  o Pro; o RevenueCat não recebe nome nem e-mail, e nada disso é usado para publicidade. O
+  tratamento pelo RevenueCat segue a
+  <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">política do RevenueCat</a>.</p>
+  <p>Em outro aparelho ou depois de reinstalar o app, <strong>Restaurar compras</strong>,
+  na tela do Pro, recupera a assinatura pelo mesmo Apple ID. Cancelamento e troca de plano
+  ficam em Ajustes do iPhone ou do iPad › seu nome › Assinaturas.</p>
+
+  <h2 id="conta">Conta e sincronização</h2>
+  <p>A conta é opcional: sem ela, tudo funciona e fica só no aparelho. Em Ajustes › Conta,
+  dá para entrar com a Apple, com o Google ou com o e-mail, por um código de 6 dígitos
+  enviado a ele, sem senha. O login passa pelo Supabase, que guarda o e-mail e o
+  identificador que a Apple ou o Google informam (com a Apple, pode ser o e-mail de
+  retransmissão dela; com o Google, o Supabase também recebe o nome e a foto do perfil, se
+  houver, que o app não usa). A sessão fica no Keychain do aparelho.</p>
+  <p>Com a conta conectada, o app sincroniza pelo Supabase, entre os seus aparelhos:</p>
+  <ul>
+    <li>anotações: grifos e sublinhados (com o trecho marcado), notas com o texto,
+    favoritos e dispositivos riscados;</li>
+    <li>a tinta do Apple Pencil, com o desenho e o trecho onde ele fica;</li>
+    <li>estudos: o perfil (o nome que você digitar, o concurso e o tempo por dia), as
+    conclusões de bloco, a disponibilidade de cada dia e os ajustes da agenda;</li>
+    <li>a revisão das questões (as datas e o histórico de cada uma).</li>
+  </ul>
+  <p>Não sobem as preferências, a posição de leitura, a sessão em andamento, o plano do mês,
+  os diagnósticos nem o calendário do aparelho. Os dados sincronizados ficam ligados à conta
+  e servem só para o app funcionar.</p>
+  <p>Quando você apaga um item sincronizado, o servidor o marca como excluído, para que a
+  exclusão chegue aos outros aparelhos; o registro só sai do servidor com a exclusão da
+  conta. <strong>Sair</strong> encerra a sessão neste aparelho e para a sincronização, sem
+  apagar nada daqui nem do servidor.</p>
+  <p><strong>Excluir conta</strong>, em Ajustes › Conta, pede para confirmar a identidade
+  de novo (Apple, Google ou um novo código por e-mail). Numa conta Apple, o acesso do app à
+  conta Apple é revogado antes. Em seguida, a conta e todos os dados guardados nela saem do
+  servidor; o que está no aparelho fica.</p>
+
+  <h2>O que não fazemos</h2>
+  <ul>
+    <li>Não exigimos conta nem login: sem eles, tudo funciona no aparelho.</li>
+    <li>Não exibimos anúncios nem rastreamos você entre apps e sites; por isso o app não
+    pede a permissão de rastreamento (ATT).</li>
+    <li>Não usamos serviço de analytics comportamental, publicidade ou crash reporting de
+    terceiros.</li>
+    <li>Não vendemos nem alugamos dados.</li>
+    <li>Não coletamos localização, contatos nem fotos.</li>
+    <li>Não incluímos automaticamente o texto de notas, grifos ou tinta em relatórios.</li>
+  </ul>
+
+  <h2>Retenção e exclusão</h2>
+  <ul>
+    <li>Os dados de estudos podem ser apagados em Ajustes sem apagar as anotações. Outros
+    dados locais e diagnósticos permanecem no aparelho até sua remoção; apagar o app apaga
+    todos eles do aparelho.</li>
+    <li>Os dados da conta ficam no Supabase enquanto a conta existir. A exclusão da conta,
+    dentro do app, apaga a conta e todos esses dados do servidor.</li>
+    <li>O histórico de compras fica com a Apple e com o RevenueCat enquanto for necessário
+    para manter a assinatura e cumprir obrigações fiscais. A exclusão do registro no
+    RevenueCat pode ser pedida pelo e-mail de suporte.</li>
+    <li>Um relatório compartilhado passa a seguir as regras de retenção do aplicativo ou
+    destinatário escolhido pelo usuário.</li>
+    <li>Relatórios enviados ao e-mail de suporte são mantidos somente enquanto necessários
+    para atender, investigar, corrigir ou cumprir obrigação aplicável. O remetente pode
+    pedir exclusão pelo mesmo endereço, ressalvadas obrigações legais.</li>
+    <li>Chamados públicos no GitHub seguem a
+    <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">política do GitHub</a>.
+    Não publique dados pessoais ou informações sigilosas nesse canal.</li>
+  </ul>
+
+  <h2>Conteúdo e público</h2>
+  <p>O texto de legislação e súmulas é embarcado e não depende de servidor para leitura.
+  O app não é dirigido a crianças e não cria perfis de comportamento nem de publicidade.</p>
+
+  <h2>Suporte e privacidade</h2>
+  <p>Consulte a <a href="suporte.html">página de suporte</a>. Para atendimento privado,
+  envie somente o necessário para
+  <a href="mailto:digilex365@gmail.com">digilex365@gmail.com</a>.
+  O aplicativo não lê essa caixa, e o remetente escolhe se deseja enviar o relatório.</p>
+  <p>Para um chamado não confidencial, use o
+  <a href="https://github.com/spirla/pmmg365-site/issues/new" target="_blank" rel="noopener">formulário público de suporte</a>.
+  Não inclua dados pessoais, processos sob sigilo ou conteúdo de anotações.</p>
+
+  <h2>Alterações</h2>
+  <p>A versão vigente desta política permanece publicada nesta URL e acompanha o
+  comportamento do app distribuído.</p>
+
+  <footer>PMMG365, da Digilex — offline-first e sem rastreamento. Atualizada em
+  27 de outubro de 2026.</footer>
+</main>
+</body>
+</html>

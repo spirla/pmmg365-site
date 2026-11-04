@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+  --texto:#27231d;
+  --suave:#665f54;
+  --fundo:#f4efe5;
+  --superficie:#fffaf1;
+  --linha:#d8cdbb;
+  --link:#5a472a;
+  --brilho:#f3d39b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --texto:#eee8dc;
+    --suave:#b8afa1;
+    --fundo:#1d1c1a;
+    --superficie:#262420;
+    --linha:#49443b;
+    --link:#dbc69f;
+    --brilho:#7a6644;
+  }
+}
+
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body {
+  margin:0;
+  background:var(--fundo);
+  color:var(--texto);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+a { color:var(--link); text-underline-offset:3px; }
+main { width:min(100% - 40px,960px); margin:0 auto; padding:32px 0 72px; }
+main.documento { width:min(100% - 40px,720px); }
+nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.marca {
+  color:var(--texto);
+  font:600 1.08rem/1.2 ui-serif,Georgia,serif;
+  text-decoration:none;
+}
+nav div { display:flex; gap:18px; font-size:.9rem; color:var(--suave); }
+nav a[aria-current="page"] { color:var(--texto); text-decoration-thickness:2px; }
+header { margin-top:44px; border-bottom:1px solid var(--linha); padding-bottom:20px; }
+h1 { margin:0 0 6px; font:600 2rem/1.16 ui-serif,Georgia,serif; letter-spacing:-.02em; }
+h2 { margin:34px 0 10px; font:600 1.25rem/1.25 ui-serif,Georgia,serif; }
+p { margin:0 0 14px; }
+ul, ol { margin:0 0 16px; padding-left:24px; }
+li { margin-bottom:8px; }
+.app, footer { color:var(--suave); }
+.resumo {
+  position:relative;
+  overflow:hidden;
+  margin:24px 0;
+  padding:20px 22px;
+  border:1px solid var(--linha);
+  border-radius:16px;
+  background:var(--superficie);
+}
+.resumo::before {
+  content:"";
+  position:absolute;
+  width:180px;
+  height:180px;
+  left:-110px;
+  top:-125px;
+  border-radius:50%;
+  background:radial-gradient(circle,var(--brilho),transparent 70%);
+  opacity:.28;
+  pointer-events:none;
+}
+.resumo p { position:relative; }
+footer { margin-top:46px; padding-top:20px; border-top:1px solid var(--linha); font-size:.9rem; }
+
+@media (max-width:680px) {
+  nav { align-items:flex-start; }
+  nav div { flex-direction:column; gap:6px; text-align:right; }
+}

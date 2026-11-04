@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PMMG365: plano de estudos para concursos da PMMG e leitura offline de legislação federal e mineira, no iPhone e no iPad.">
+  <meta name="theme-color" content="#f4efe5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1d1c1a" media="(prefers-color-scheme: dark)">
+  <title>PMMG365 — Vade Mecum, resumos e plano</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --texto:#27231d; --suave:#665f54; --fundo:#f4efe5; --superficie:#fffaf1;
+      --linha:#d8cdbb; --acento:#665436; --brilho:#f3d39b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --texto:#eee8dc; --suave:#b8afa1; --fundo:#1d1c1a; --superficie:#262420;
+        --linha:#49443b; --acento:#dbc69f; --brilho:#7a6644;
+      }
+    }
+    * { box-sizing:border-box; }
+    html { -webkit-text-size-adjust:100%; }
+    body {
+      margin:0; background:var(--fundo); color:var(--texto);
+      font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    a { color:inherit; text-underline-offset:3px; }
+    main { width:min(100% - 40px, 960px); margin:0 auto; padding:32px 0 72px; }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .marca { font:600 1.08rem/1.2 ui-serif,Georgia,serif; text-decoration:none; }
+    nav div { display:flex; gap:18px; font-size:.9rem; color:var(--suave); }
+    .hero {
+      position:relative; overflow:hidden; margin:48px 0 24px; padding:64px clamp(24px,6vw,72px);
+      border:1px solid var(--linha); border-radius:28px; background:var(--superficie);
+    }
+    .hero::before {
+      content:""; position:absolute; width:440px; height:440px; left:-230px; top:-260px;
+      border-radius:50%; background:radial-gradient(circle,var(--brilho),transparent 68%);
+      opacity:.42; filter:blur(8px); pointer-events:none;
+    }
+    .status {
+      display:inline-block; margin:0 0 18px; padding:5px 10px; border:1px solid var(--linha);
+      border-radius:999px; color:var(--suave); font-size:.78rem; letter-spacing:.02em;
+    }
+    h1 { position:relative; max-width:760px; margin:0; font:600 clamp(2.6rem,7vw,5.4rem)/.98 ui-serif,Georgia,serif; letter-spacing:-.035em; }
+    .hero p { position:relative; max-width:650px; margin:28px 0 0; color:var(--suave); font-size:clamp(1.05rem,2vw,1.28rem); }
+    .grade { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    article { padding:26px; border:1px solid var(--linha); border-radius:20px; background:var(--superficie); }
+    h2 { margin:0 0 9px; font:600 1.28rem/1.25 ui-serif,Georgia,serif; }
+    article p { margin:0; color:var(--suave); }
+    .nota { margin:42px 0 0; padding:26px 0; border-block:1px solid var(--linha); color:var(--suave); }
+    footer { display:flex; justify-content:space-between; gap:24px; margin-top:28px; color:var(--suave); font-size:.88rem; }
+    footer div { display:flex; flex-wrap:wrap; gap:16px; }
+    @media (max-width:680px) {
+      nav { align-items:flex-start; }
+      nav div { flex-direction:column; gap:6px; text-align:right; }
+      .hero { margin-top:30px; padding-block:46px; border-radius:22px; }
+      .grade { grid-template-columns:1fr; }
+      footer { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Navegação principal">
+    <a class="marca" href="./">PMMG365</a>
+    <div>
+      <a href="suporte.html">Suporte</a>
+      <a href="politica-privacidade.html">Privacidade</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <span class="status">App nativo para iPhone e iPad</span>
+    <h1>Vade Mecum, resumos e plano no mesmo app.</h1>
+    <p>Hoje, Vade Mecum, Resumos, Questões e Plano: o estudo para os concursos da PMMG em cinco abas, com a legislação federal e mineira no iPhone e iPad, mesmo offline.</p>
+  </section>
+
+  <section class="grade" aria-label="Recursos principais">
+    <article>
+      <h2>Suas anotações atravessam as mudanças da lei</h2>
+      <p>Quando uma redação é substituída, a versão anotada permanece preservada e a vigente aparece logo abaixo.</p>
+    </article>
+    <article>
+      <h2>Acervo oficial no aparelho</h2>
+      <p>Legislação federal e mineira selecionada, processada a partir de fontes oficiais registradas no acervo.</p>
+    </article>
+    <article>
+      <h2>Leitura em tela cheia</h2>
+      <p>Grifos, sublinhados e notas, sumário, busca na norma e retomada no ponto onde você parou. No iPad, resumo e lei lado a lado.</p>
+    </article>
+    <article>
+      <h2>Um plano que acompanha a semana</h2>
+      <p>Escolha o concurso e o tempo por dia; Hoje mostra o que estudar agora, e o recorte do edital deixa perto o que cai na prova.</p>
+    </article>
+    <article>
+      <h2>Questões com a lei ao lado</h2>
+      <p>Resolva em modo de concentração, confira o gabarito comentado alternativa por alternativa e vá direto ao artigo.</p>
+    </article>
+    <article>
+      <h2>PMMG365 Pro</h2>
+      <p>Tudo liberado nos primeiros 7 dias, sem cartão. Depois, a Constituição Federal e a matéria Direito Constitucional continuam gratuitas, com resumos e questões, inclusive sobre a Constituição Estadual; a leitura da Constituição Estadual fica no Pro. O Pro, a R$ 49,90 por mês, R$ 239,40 por semestre ou R$ 298,80 por ano pela App Store, libera as demais normas e matérias.</p>
+    </article>
+  </section>
+
+  <p class="nota">Estudos e anotações ficam no seu aparelho e funcionam offline. O PMMG365 é independente e não possui vínculo institucional com a PMMG.</p>
+
+  <footer>
+    <span>© 2026 Digilex · PMMG365</span>
+    <div>
+      <a href="mailto:digilex365@gmail.com">Contato</a>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termos de Uso</a>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
